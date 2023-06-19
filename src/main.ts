@@ -1,0 +1,10 @@
+import './style.css';
+import App from './App.vue';
+import { router } from './router';
+import store from './store';
+import 'virtual:uno.css';
+import 'lib-flexible';
+const app = createApp(App);
+app.use(router);
+app.use(store);
+app.mount('#app');
